@@ -1,0 +1,9 @@
+::: {.figure caption="Figure caption"}
+
+![Tux junior 1 caption](Tux_junior-1.pdf "Tux Junior 1")
+
+![Tux junior 2 caption](Tux_junior-2.pdf "Tux Junior 2")
+
+![Tux junior 3 caption](Tux_junior-3.pdf "Tux Junior 3")
+
+:::
