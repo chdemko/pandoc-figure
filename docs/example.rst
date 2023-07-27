@@ -3,7 +3,7 @@ Example
 
 Demonstration: Using
 
-* :download:`pandoc-figure.txt <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.txt>`
+* :download:`pandoc-figure.txt <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.txt>`_
 
 .. code-block:: markdown
 
@@ -19,12 +19,12 @@ Demonstration: Using
 
 and
 
-* :download:`Tux_junior-1.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`
-* :download:`Tux_junior-2.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`
-* :download:`Tux_junior-3.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`
+* :download:`Tux_junior-1.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`_
+* :download:`Tux_junior-2.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`_
+* :download:`Tux_junior-3.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`_
 
 as input gives output file in
-:download:`pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.pdf>`.
+:download:`pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.pdf>`_.
 
 The
 `Tux junior image <https://opengameart.org/content/tux-junior-walking-sample>`_
