@@ -2,8 +2,8 @@ Example
 -------
 
 Demonstration: Using
-`pandoc-figure.txt <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.txt>`__
 
+* `pandoc-figure.txt <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.txt>`__
 
 .. code-block:: markdown
 
@@ -16,6 +16,12 @@ Demonstration: Using
    ![Tux junior 3 caption](Tux_junior-3.pdf "Tux Junior 3")
 
    :::
+
+and
+
+* `Tux_junior-1.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`__
+* `Tux_junior-2.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`__
+* `Tux_junior-3.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`__
 
 as input gives output file in
 `pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.pdf>`__.
