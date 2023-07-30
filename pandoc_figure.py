@@ -15,7 +15,7 @@ from panflute import (  # type: ignore
 )
 
 
-# pylint: disable=broad-exception-caught,unused-argument
+# pylint: disable=broad-exception-caught
 def figure(elem, doc):
     """
     Transform a div element into a figure element.
@@ -32,7 +32,8 @@ def figure(elem, doc):
         Figure or None.
     """
     if (
-        isinstance(elem, Div)
+        doc.api_version >= (1, 23)
+        and isinstance(elem, Div)
         and "figure" in elem.classes
         and "caption" in elem.attributes
     ):
@@ -52,6 +53,23 @@ def figure(elem, doc):
     return None
 
 
+def prepare(doc):
+    """
+    Prepare the pandoc document.
+
+    Arguments
+    ---------
+    doc
+        The pandoc document
+    """
+    if doc.api_version < (1, 23):
+        debug(
+            f"[WARNING] pandoc-figure: pandoc api version "
+            f"{'.'.join(str(value) for value in doc.api_version)} "
+            "is not compatible"
+        )
+
+
 def main(doc=None):
     """
     Convert the pandoc document.
@@ -65,7 +83,7 @@ def main(doc=None):
     -------
         The modified pandoc document
     """
-    return run_filter(figure, doc=doc)
+    return run_filter(figure, prepare=prepare, doc=doc)
 
 
 if __name__ == "__main__":
