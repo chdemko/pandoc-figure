@@ -2,8 +2,8 @@ Example
 -------
 
 Demonstration: Using
-`pandoc-figure.txt <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.txt>`__
 
+* :download:`pandoc-figure.txt <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.txt>`
 
 .. code-block:: markdown
 
@@ -17,8 +17,14 @@ Demonstration: Using
 
    :::
 
+and
+
+* :download:`Tux_junior-1.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`
+* :download:`Tux_junior-2.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`
+* :download:`Tux_junior-3.pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/Tux_junior-1.pdf>`
+
 as input gives output file in
-`pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.pdf>`__.
+:download:`pdf <https://raw.githubusercontent.com/chdemko/pandoc-figure/develop/docs/images/pandoc-figure.pdf>`.
 
 The
 `Tux junior image <https://opengameart.org/content/tux-junior-walking-sample>`_
