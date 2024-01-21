@@ -4,7 +4,7 @@
 Pandoc filter for adding complex figures.
 """
 
-from panflute import (  # type: ignore
+from panflute import (
     Caption,
     Div,
     Figure,
