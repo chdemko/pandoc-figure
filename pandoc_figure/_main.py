@@ -7,6 +7,8 @@ Pandoc filter for adding complex figures.
 from panflute import (
     Caption,
     Div,
+    Doc,
+    Element,
     Figure,
     Plain,
     convert_text,
@@ -16,7 +18,7 @@ from panflute import (
 
 
 # pylint: disable=broad-exception-caught
-def figure(elem, doc):
+def figure(elem: Element, doc: Doc) -> Figure | None:
     """
     Transform a div element into a figure element.
 
@@ -29,6 +31,7 @@ def figure(elem, doc):
 
     Returns
     -------
+    Figure | None
         Figure or None.
     """
     if (
@@ -53,7 +56,7 @@ def figure(elem, doc):
     return None
 
 
-def prepare(doc):
+def prepare(doc: Doc) -> None:
     """
     Prepare the pandoc document.
 
@@ -70,7 +73,7 @@ def prepare(doc):
         )
 
 
-def main(doc=None):
+def main(doc: Doc | None = None) -> Doc:
     """
     Convert the pandoc document.
 
@@ -81,6 +84,7 @@ def main(doc=None):
 
     Returns
     -------
+    Doc
         The modified pandoc document
     """
     return run_filter(figure, prepare=prepare, doc=doc)
