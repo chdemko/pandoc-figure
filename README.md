@@ -37,14 +37,14 @@ pre-installed on linux and Mac OS X, and which is easily installed
 
 Install *pandoc-figure* using the bash command
 
-~~~{prompt} bash
-pipx install pandoc-figure
+~~~shell-session
+$ pipx install pandoc-figure
 ~~~
 
 To upgrade to the most recent release, use
 
-~~~{prompt} bash
-pipx upgrade pandoc-figure
+~~~shell-session
+$ pipx upgrade pandoc-figure
 ~~~
 
 `pipx` is a script to install and run python applications in isolated

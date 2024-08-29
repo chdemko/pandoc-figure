@@ -3,9 +3,9 @@ Usage
 
 Run `pandoc` using ``pandoc-figure`` filter:
 
-.. prompt:: bash
+.. code-block:: shell-session
 
-    pandoc --filter pandoc-figure
+    $ pandoc --filter pandoc-figure
 
 
 .. toctree::
