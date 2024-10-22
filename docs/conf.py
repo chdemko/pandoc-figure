@@ -1,44 +1,32 @@
-"""
-Sphinx configuration.
-"""
-
-# noqa: INP001
-# Configuration file for the Sphinx documentation builder.
-#
-# This file does only contain a selection of the most common options. For a
-# full list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
-
-# -- Path setup --------------------------------------------------------------
+"""The configuration module for sphinx."""
 
 import datetime
 import os
 import sys
+from pathlib import Path
 
 import tomllib
 
-sys.path.insert(0, os.path.abspath("../.."))
-
-on_rtd = os.environ.get("READTHEDOCS") == "True"
-
-# -- Project information -----------------------------------------------------
-
-with open("../pyproject.toml", "rb") as f:
+with Path("..", "pyproject.toml").resolve().open("rb") as f:
     data = tomllib.load(f)
     project = data["project"]["name"]
     author = ",".join(author["name"] for author in data["project"]["authors"])
-release = os.popen("hatch version").readline().strip()  # noqa: S605, S607
+version = os.popen("hatch version").readline().strip()  # noqa: S605, S607
 year = datetime.datetime.now(tz=datetime.UTC).date().year
-copyright = f"2023-{year}, {author}"  # noqa: A001
+# noinspection PyShadowingBuiltins
+copyright = f"2019-{year}, {author}"  # noqa: A001
 
-# The short X.Y version
-version = ".".join(release.split(".")[:2])
+python_path = str(Path("..").resolve())
+sys.path.insert(0, python_path)
+os.environ["PYTHONPATH"] = python_path
+
+on_rtd = os.environ.get("READTHEDOCS") == "True"
 
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = "8.0"
+needs_sphinx = "8.1"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -60,7 +48,6 @@ source_suffix = {
     ".md": "markdown",
 }
 
-
 # The master document.
 master_doc = "index"
 
@@ -78,7 +65,6 @@ exclude_patterns = ["images"]
 
 # The name of the syntax highlighting style to use.
 pygments_style = "sphinx"
-
 
 # -- Options for HTML output -------------------------------------------------
 
