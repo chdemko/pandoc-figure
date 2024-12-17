@@ -24,7 +24,7 @@ wheels = [
 
 [[package]]
 name = "pandoc-figure"
-version = "0.1.0.4.post1.dev1"
+version = "0.1.0.5.post1.dev3"
 source = { editable = "." }
 dependencies = [
     { name = "panflute" },
